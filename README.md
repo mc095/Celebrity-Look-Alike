@@ -18,9 +18,9 @@ A web application that uses facial recognition to find your celebrity doppelgän
 ## Demo
 Below are examples of the app in action:
 
-### Example 1: User Photo and Celebrity Match
+### User Photo and Celebrity Match
 ![Demo 1](demo/look_alike.gif)
-*Uploaded photo (left) matched with a celebrity (right) with a similarity score of 0.85.*
+*Uploaded photo (left) matched with a celebrity (right) with a similarity score of 0.65.*
 
 
 ## Installation
@@ -28,6 +28,7 @@ To run the Celebrity Look-Alike app locally, follow these steps:
 
 ### Prerequisites
 - Python 3.8 or higher
+- venv
 - pip package manager
 - Git
 
@@ -41,7 +42,7 @@ To run the Celebrity Look-Alike app locally, follow these steps:
 2. **Create a Virtual Environment**:
    ```bash
    python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   venv\Scripts\activate
    ```
 
 3. **Install Dependencies**:
@@ -51,7 +52,7 @@ To run the Celebrity Look-Alike app locally, follow these steps:
 
 5. **Run the App**:
    ```bash
-   streamlit run app.py
+   python -m streamlit run app.py
    ```
    Open your browser and navigate to `http://localhost:8501` to use the app.
 
@@ -71,7 +72,6 @@ To run the Celebrity Look-Alike app locally, follow these steps:
 ## Dataset
 The app uses a dataset of celebrity images (e.g., from IMDB or Wikipedia). Ensure the dataset is formatted as follows:
 - A folder containing subfolders for each celebrity, with images named appropriately.
-- A `.csv` or `.pkl` file with precomputed face embeddings for faster matching (generated using `scraper.py` or similar).
 
 ## Usage
 1. Open the app in your browser.
@@ -93,12 +93,3 @@ Contributions are welcome! To contribute:
 5. Open a pull request.
 
 Please open an issue to discuss major changes before submitting a pull request.
-
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-- [MTCNN](https://github.com/ipazc/mtcnn) for face detection.
-- [FaceNet](https://github.com/davidsandberg/facenet) for facial feature extraction.
-- [Streamlit](https://streamlit.io/) for the web framework.
-- Dataset sources: IMDB, Wikipedia
