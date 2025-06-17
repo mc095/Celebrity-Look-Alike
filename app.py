@@ -12,7 +12,7 @@ from io import BytesIO                     # For creating image buffer to serve 
 
 # === App Config ===
 st.set_page_config(page_title="Who Do You Look Like?", layout="centered")
-st.title("Who Do You Look Like? (CLIP Edition)")
+st.title("Who Do You Look Like?")
 st.caption("Upload a selfie, and AI finds your top 3 celeb twins!")
 
 # === Load CLIP model (ViT-B/32) === (324 MB)
