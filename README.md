@@ -19,7 +19,7 @@ A web application that uses facial recognition to find your celebrity doppelgän
 Below are examples of the app in action:
 
 ### Example 1: User Photo and Celebrity Match
-![Demo 1](demo/image.png)
+![Demo 1](demo/look_alike.gif)
 *Uploaded photo (left) matched with a celebrity (right) with a similarity score of 0.85.*
 
 
